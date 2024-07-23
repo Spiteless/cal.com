@@ -101,6 +101,9 @@ To develop locally:
    - Use `openssl rand -base64 32` to generate a key and add it under `NEXTAUTH_SECRET` in the `.env` file.
    - Use `openssl rand -base64 32` to generate a key and add it under `CALENDSO_ENCRYPTION_KEY` in the `.env` file.
 
+> [!TIP]  
+> Are you experiencing `Error: Error serializing `.csrfToken` returned from `getServerSideProps` in "/auth/login".` ? It might be that the default port `'http://localhost:3000'` in the environment variables is already in use and NextJs built on the next available port. 
+
 6. Setup Node
    If your Node version does not meet the project's requirements as instructed by the docs, "nvm" (Node Version Manager) allows using Node at the version required by the project:
 
